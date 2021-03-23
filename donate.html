@@ -1,0 +1,246 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<!--Jedidiah Chang-->
+    <head> 
+        <title>JC $Donate$</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="To preserve, share, and discover: people, stories, and history">
+        <meta name="keywords" content="art, photographer, jedidiah chang, legacy">
+        <meta name="author" content="Jedidiah.Chang">
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="../js/all.js"></script>
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/modernizer.js"></script>
+        <script src="js/donate.js"></script>
+        <link rel="stylesheet" href="css/donate.css">
+    </head>
+    <body>
+          <div id="site-header">
+            <header id="header" class="header-block-top">
+              <div class="container">
+                <div class="row">
+                  <div class="main-menu">
+                    <nav class="navbar navbar-default" id="mainNav">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                          <a class="navbar-brand js-scroll-trigger logo-header" href="index.html">
+                            <img src="images/logo.png" height="80" alt="logo">
+                          </a>
+                        </div>
+                      </div>
+                      <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li class="active"><a href="index.html">Home</a></li>
+                          <li><a href="all_projects.html">All Projects</a></li>
+                          <li><a href="donate.html">DONATIONS</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>		
+          <div id="card-success" class="hidden">
+              <i class="fa fa-check"></i>
+              <p>Payment Successful!</p>
+            </div>
+            <div id="form-errors" class="hidden">
+              <i class="fa fa-exclamation-triangle"></i>
+              <p id="card-error">Card error</p>
+            </div>
+            <div id="form-container">
+            
+              <div id="card-front">
+                <div id="shadow"></div>
+                <div id="image-container">
+                  <span id="amount"><strong>Paying: $</strong> <input type="text"  placeholder="1000000"></span>
+
+                  <!--<label for="card-amount">
+                    Paying: $ <input type="text" id="card-amount" placeholder="1000000">
+                  </label>-->
+               
+
+
+
+                  <span id="card-image">
+                  
+                    </span>
+                </div>
+                <!--- end card image container --->
+            
+                <label for="card-number">
+                    Card Number 
+                  </label>
+                <input type="text" id="card-number" placeholder="1234 5678 9101 1112" length="16">
+                <div id="cardholder-container">
+                  <label for="card-holder">Card Holder
+                  </label>
+                  <input type="text" id="card-holder" placeholder="e.g. JEDIDIAH CHANG" />
+                </div>
+                <!--- end card holder container --->
+                <div id="exp-container">
+                  <label for="card-exp">
+                      Expiration
+                    </label>
+                  <input id="card-month" type="text" placeholder="MM" length="2">
+                  <input id="card-year" type="text" placeholder="YY" length="2">
+                </div>
+                    <div id="cvc-container">
+                  <label for="card-cvc"> CVC/CVV</label>
+                  <input id="card-cvc" placeholder="XXX-X" type="text" min-length="3" max-length="4">
+                  <p>Last 3 or 4 digits</p>
+                </div>
+                <!--- end CVC container --->
+                <!--- end exp container --->
+              </div>
+              <!--- end card front --->
+              <div id="card-back">
+                <div id="card-stripe">
+                </div>
+            
+              </div>
+              <!--- end card back --->
+              <input type="text" id="card-token" />
+              <button type="button" id="card-btn">Submit</button>
+            
+            </div>
+            <!--- end form container --->
+            
+          <div id="footer" class="footer-main">
+            <div class="footer-box pad-top-70">
+              <div class="container">
+                <div class="row">
+                  <div class="footer-in-main">
+                    <div class="footer-logo">
+                      <div class="text-center">
+                        <a href="index.html"><img src="images/logo.png" alt="JC" height="80" /></a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="footer-box-a">
+                        <h3>About Me</h3>
+                        <p>If you like what you see then follow me for some more awesome content. Otherwise you can contact me for some future collaborations.</p>
+                        <ul class="socials-box footer-socials pull-left">
+                          <li>
+                            <a href="https://www.facebook.com/jedidiah.chang.9">
+                              <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/jedichang/">
+                              <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://aboutme.google.com/u/0/?referer=gplus">
+                              <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.pinterest.com/jedichang99/">
+                              <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/in/jedidiah-chang-7525a1194/">
+                              <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="footer-box-b">
+                        <h3>Equipment</h3>
+                        <ul>
+                          <li><a href="https://www.usa.canon.com/internet/portal/us/home/products/details/cameras/eos-dslr-and-mirrorless-cameras/dslr/eos-6d-mark-ii">Canon 6D Mark II</a></li>
+                          <li><a href="https://gopro.com/en/us/update/hero6">Gopro Hero 6</a></li>
+                          <li><a href="https://www.dji.com/mavic">DJI Mavic Pro</a></li>
+                          <li><a href="https://www.amazon.com/yongnuo-YN50mm-Standard-Aperture-Camera/dp/B07QZ3837L/ref=sr_1_2_sspa?gclid=CjwKCAiAwZTuBRAYEiwAcr67OcdNJWKqyRci8OvshnH0Y6Yy4ydT09r4LOUM_BFECt5p-SCvDiwbOxoC7FMQAvD_BwE&hvadid=323350408556&hvdev=c&hvlocphy=9019667&hvnetw=g&hvpos=1t1&hvqmt=b&hvrand=4774414219664839522&hvtargid=kwd-469363346330&hydadcr=18854_10834198&keywords=yongnuo+50mm+ii&qid=1573245310&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTzNMSzhJRzhLTkhFJmVuY3J5cHRlZElkPUEwMDEzOTIyM0hYWlUzTTJCSFZSOCZlbmNyeXB0ZWRBZElkPUEwOTg3NjExRzRWVDRFQUU0NjZTJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Yongnuo 50mm lense</a></li>
+                          <li><a href="https://www.amazon.com/Canon-16-35mm-2-8L-III-Lens/dp/B01KURGS8U/ref=sr_1_21?keywords=canon+lenses&qid=1573701599&s=electronics&smid=ATVPDKIKX0DER&sr=1-21">Canon EF 16–35mm f/2.8L Lens</a></li>
+                          <li><a href="https://www.amazon.com/Manfrotto-504HD-546BK-Video-Tripod/dp/B003FGWKHC/ref=asc_df_B003FGWKHC/?tag=hyprod-20&linkCode=df0&hvadid=198056450525&hvpos=1o1&hvnetw=g&hvrand=13050160868440476825&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019667&hvtargid=pla-383346790451&psc=1">Manfrotto Trypod </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="footer-box-c">
+                        <h3>Contact Me</h3>
+                        <p>
+                          <i class="fa fa-map-signs" aria-hidden="true"></i>
+                          <span><a href="https://www.google.com/maps/place/2508+Delaware+St+SE,+Minneapolis,+MN+55414/@44.9714827,-93.2240659,17z/data=!3m1!4b1!4m5!3m4!1s0x52b32d20451f6b1f:0xb1f0daf01defb58!8m2!3d44.9714789!4d-93.2218772">2508 Delaware St SE, Minneapolis, MN 55414</a></span>
+                        </p>
+                        <p>
+                          <i class="fa fa-mobile" aria-hidden="true"></i>
+                          <span><a href="tel:612-***-1168">+1 612-***-1168 </a></span>
+                        </p>
+                        <p>
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                          <span><a href="mailto:chajed@dunwoody.edu">chajed@dunwoody.edu</a></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="footer-box-b">
+                        <h3>All Projects</h3>
+                        <ul>
+                          <li>
+                            <p><a href="italy.html">ITALY</a></p>
+                          </li>
+                          <li>
+                            <p><a href="taiwan.html">TAIWAN</a></p>
+                          </li>
+                          <li>
+                            <p><a href="usa.html">USA</a></p>
+                          </li>
+                          <li>
+                            <p><a href="canada.html">CANADA</a></p>
+                          </li>
+                          <li>
+                            <p><a href="loader.html">Pre-loader</a></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="copyright" class="copyright-main">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <h6 class="copy-title"> Copyright &copy; 2020</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+          <script src="https://use.fontawesome.com/f1e0bf0cbc.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+          <script src="https://use.fontawesome.com/f1e0bf0cbc.js"></script>
+        <script src="js/donate.js"></script>
+            
+    </body>
+</html>
+
+
+
